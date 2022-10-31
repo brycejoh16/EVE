@@ -2,10 +2,13 @@ export MSA_data_folder='./data/MSA'
 export MSA_list='./data/mappings/example_mapping.csv'
 export MSA_weights_location='./data/weights'
 export VAE_checkpoint_location='./results/VAE_parameters'
-export model_name_suffix='Jan1_PTEN_example'
 export model_parameters_location='./EVE/default_model_params.json'
 export training_logs_location='./logs/'
-export protein_index=0
+
+
+#what has been changed
+export protein_index=1
+export model_name_suffix='protein_gym'
 
 python train_VAE.py \
     --MSA_data_folder ${MSA_data_folder} \
